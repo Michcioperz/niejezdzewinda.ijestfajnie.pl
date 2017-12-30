@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=initial-width" />
+    <title>Wahadło informatyczne</title>
+    <style type="text/css">
+      body {
+        background-color: floralwhite;
+        color: black;
+        font-family: "Lato", "Roboto";
+        text-align: justify;
+        font-size: 1.2rem;
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+      }
+      section {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 30px 10%;
+      }
+      section.banner {
+        width: 100%;
+        max-width: 100%;
+        margin: 0px;
+        background-size: cover;
+      }
+      header h1, header h2, main h1, main h2, footer h1 {
+        font-weight: 400;
+        text-shadow: 2px 2px 3px floralwhite;
+      }
+      header h1 {
+        font-size: 3rem;
+      }
+      header h2, main h1 {
+        font-size: 2rem;
+      }
+      aside {
+        width: auto;
+        max-width: 50%;
+        padding-right: 20px;
+        margin-right: 0;
+        margin-left: auto;
+        text-align: right;
+      }
+      .signature {
+        width: 230px;
+        text-align: center;
+        background-color: aliceblue;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        padding-right: 0px;
+        padding-left: 5px;
+        border-radius: 45px;
+        box-shadow: 3px 3px 5px darkslategray;
+        display: table;
+      }
+      .signature > * {
+        width: 50%;
+        display: inline;
+        vertical-align: middle;
+      }
+      .signature img {
+        margin-left: auto;
+        margin-right: 0;
+        padding-right: 0;
+        padding-left: 10px;
+        border-radius: 45px;
+      }
+    </style>
+    <style id="localStyling" type="text/css">
+      #s1 {
+        background-image: url('https://images.unsplash.com/photo-1433832597046-4f10e10ac764?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=f5f551bf027228043944fb46fab801cc');
+        min-height: 300px;
+        background-position: 0 5%;
+      }
+      #result {
+        min-height: 300px;
+        background-image: url('https://images.unsplash.com/photo-1444005233317-7fb24f0da789?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=cd3e98771577c3a4d8a989af94c98ce2');
+        background-position: 0 50%;
+      }
+      #license {
+        text-align: center;
+        font-weight: 300;
+      }
+      .dygraph-legend {
+        background-color: transparent !important;
+      }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.6.0/contrib/auto-render.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <section id="s1" class="banner">
+        <h1>Wahadło informatyczne</h1>
+        <h2><em>i.e.</em> dowód, że winda szkolna porusza się z nieskończonym przyspieszeniem</h2>
+        <aside class="signature">
+          <em><a href="https://ijestfajnie.pl">Michał Sidor</a></em>
+          <img class="circlet" src="https://secure.gravatar.com/avatar/130ecf6c1033440659e1e6a25baec56d?s=90" />
+        </aside>
+      </section>
+    </header>
+    <main>
+      <section>
+        Tu mógłby być jakiś wstęp, ale wszyscy doskonale wiemy, o co chodzi w tej pracy.
+      </section>
+      <section>
+        <h1>Empiryczne zbieranie danych</h1>
+        <p>Ponieważ zazwyczaj nie korzystam z windy szkolnej (ani jakiejkolwiek innej, jeżeli mam do dyspozycji schody)
+        <h2>Kolejne kroki</h2>
+        <ul>
+          <li>Wsiadłem do windy.</li>
+          <li>Wcisnąłem przyciski odpowiadające za wszystkie piętra.</li>
+          <li>Zapamiętałem odczucia.</li>
+        </ul>
+        <h2>Zebrane informacje</h2>
+        <p>W momencie gdy winda zaczyna się poruszać, czuje się bardzo krótko silne szarpnięcie, które szybko znika, by powrócić podczas bardzo krótkiego hamowania.</p>
+        <h2>Wnioski</h2>
+        <ul>
+          <li>Winda porusza się przez większość czasu ruchem jednostajnym.</li>
+          <li>Podczas ruszania winda porusza się ruchem przyspieszonym przez bardzo krótki interwał czasu.</li>
+        </ul>
+      </section>
+      <section>
+        <h1>Analiza racjonalna</h1>
+        <p>Wiemy, że:</p>
+        <ul>
+          <li>winda przyspiesza,</li>
+          <li>trwa to bardzo krótko,</li>
+          <li>jest to mój jedyny trop.</li>
+        </ul>
+        <h2>Wnioski</h2>
+        <p>Winda porusza się ruchem przyspieszonym przez <strong>nieskończenie krótki interwał czasu</strong>.</p>
+        <big>\[ \vec{a} = \frac{\Delta \vec{v}}{\Delta t} \]</big>
+        <big>\[ \Delta \vec{v} = \vec{v_k} - \vec{v_0} \]</big>
+        <big>\[ \vec{v_k} = \mathrm{const} \]</big>
+        <big>\[ \vec{v_0} = 0 \]</big>
+        <big>\[ \Delta \vec{v} = \vec{v_k} = \mathrm{const} \]</big>
+        <big>\[ \Delta t \to 0 \]</big>
+        <big>\[ \lim_{\Delta t \to 0} \vec{a} = \infty \]</big>
+        <p>Zatem przyspieszenie windy dąży do nieskończoności.</p>
+      </section>
+      <section>
+        <h1><em>Reality check</em></h1>
+        <p>Ta praca kończyłaby się w tym miejscu, gdyby nie pewien prosty do zauważenia problem:</p>
+        <big>\[ \vec{F} = m \vec{a} \]</big>
+        <big>\[ m = \mathrm{const} \]</big>
+        <big>\[ \lim_{\Delta t \to 0} \vec{a} = \infty \Rightarrow \lim_{\Delta t \to 0} \vec{F} = \infty\]</big>
+        <p>Zatem siła przyłożona do windy przez jej silnik przez ten niewielki ułamek sekundy dąży również do nieskończoności.</p>
+        <p>Gdyby to była prawda, <em>SpaceX</em> już dawno używałoby wind zamiast rakiet.</p>
+      </section>
+      <section>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/dygraph/1.1.1/dygraph-combined.js"></script>
+        <h1>Porządne zbieranie danych</h1>
+        <p>Pofatygowałem się jeszcze raz do windy z telefonem zawieszonym na bardzo krótkim kablem \( USB \) z włączonym akcelerometrem. Wykorzystałem go jako wahadło i przejechałem windą z piętra \( 2 \) na piętro \( -1 \).</p>
+        <p>Zamierzałem wyliczyć okresy kolejnych drgań i z tych danych wybrać najbardziej wyróżniający się wynik - zróżnicowany przez przyspieszeniem.</p>
+        <p>Niestety, ze względu na zróżnicowaną amplitudę wahania spowodowaną brakiem wprawy i niejednokrotnie strach przed ponownym rozbiciem ekranu lub dalszym uszkodzeniem urządzenia, uzyskane dane okazały się bardzo trudne do interpretacji, co pokazuje wykres.</p>
+        <div id="wykres1"></div>
+        <script>new Dygraph(document.getElementById("wykres1"), "data.csv", {legend: "always", showRoller: true, ylabel: "Wychylenie telefonu (°)", xlabel: "Czas"});</script>
+        <p>Zawiedziony, zirytowany i zniecierpliwiony takim obrotem sprawy, przeprowadziłem jeszcze jeden pomiar, tym razem jednak nie wprowadzając wahadła w drgania, a jedynie spisując dane z akcelerometru.</p>
+        <div id="wykres2"></div>
+        <script>new Dygraph(document.getElementById("wykres2"), "data3.csv", {legend: "always", showRoller: true, ylabel: "Przyspieszenie (m/s^2)", xlabel: "Czas (ms)"});</script>
+        <p>Szczególnie interesujący wydaje się końcowy fragment, przedstawiający ostatnie hamowanie jadącej pod górę windy.</p>
+        <div id="wykres3"></div>
+        <script>new Dygraph(document.getElementById("wykres3"), "data4.csv", {legend: "always", showRoller: true, ylabel: "Przyspieszenie (m/s^2)", xlabel: "Czas (ms)"});</script>
+        <p>Z pełnego wykresu możemy oszacować przyspieszenie ziemskie \( g = -10 \frac{\mathrm{m}}{\mathrm{s}^2} \).</p>
+        <p>Odchylenie podczas hamowania wyniosło \( g+a = -10.72 \frac{\mathrm{m}}{\mathrm{s}^2} \Rightarrow a = -0.72 \frac{\mathrm{m}}{\mathrm{s}^2} \).</p>
+        <p>Zakładam, że winda hamuje z przyspieszeniem dokładnie przeciwnym do tego, z którym rusza, zatem jego wartość bezwzględna jest równa.</p>
+        <p>To prowadzi nas do quasi-rozsądnego wyniku:</p>
+      </section>
+    </main>
+    <footer>
+      <section id="result" class="banner">
+        <h1><big>\[ a = 0.72 \frac{\mathrm{m}}{\mathrm{s}^2} \]</big></h1>
+      </section>
+      <section id="license">
+        <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Licencja Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />Ten <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" rel="dct:type">utwór</span>, autorstwa <a xmlns:cc="http://creativecommons.org/ns#" href="https://ijestfajnie.pl" property="cc:attributionName" rel="cc:attributionURL">Michcioperz</a>a jest dostępny na licencji <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Uznanie autorstwa-Na tych samych warunkach 4.0 Międzynarodowe</a>.
+      </section>  
+    </footer>
+    <script>renderMathInElement(document.body);</script>
+  </body>
+</html>
